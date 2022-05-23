@@ -33,7 +33,7 @@
     * Represent a user (first name, last name, email)
     * Repres	ent a book (title, ISBN, author-ids, publication year)
     * Represent an author (first name, last name, book-isbns)
-    * Represent a [catalog](https://klipse-embed.herokuapp.com/?src=KGRlZiUyMG1pa2UlMjAlN0IlM0FmaXJzdC1uYW1lJTIwJTIyTWljaGFlbCUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWxhc3QtbmFtZSUyMCUyMktsZXltYW4lMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FlbWFpbCUyMCUyMm1pa2UlNDBtZS5jb20lMjIlN0QpJTBBJTBBKGRlZiUyMHdhdGNobWVuJTIwJTdCJTNBaXNibiUyMCUyMjEyMy00NTYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0F0aXRsZSUyMCUyMldhdGNobWVuJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBYXV0aG9yLWlkcyUyMCU1QiUyMmFsYW4tbW9vcmUlMjIlMjAlMjJkYXZlLWdpYmJvbnMlMjIlNUQlN0QpJTBBJTBBKGRlZiUyMHNldmVuLWhhYml0cyUyMCU3QiUzQWlzYm4lMjAlMjIxNDUtNDIzJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBdGl0bGUlMjAlMjJTZXZlbiUyMEhhYml0cyUyMG9mJTIwSGlnaGx5JTIwRWZmZWN0aXZlJTIwUGVvcGxlJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBYXV0aG9yLWlkcyUyMCU1QiUyMnN0ZXBoZW4tY292ZXklMjIlNUQlN0QpJTBBJTBBJTBBKGRlZiUyMGFsYW4lMjAlN0IlM0FpZCUyMCUyMmFsYW4tbW9vcmUlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FmaXJzdC1uYW1lJTIwJTIyQWxhbiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWxhc3QtbmFtZSUyMCUyMk1vb3JlJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBYm9vay1pc2JucyUyMCU1QiUyMjEyMy00NTYlMjIlNUQlN0QpJTBBJTBBKGRlZiUyMGRhdmUlMjAlN0IlM0FpZCUyMCUyMmRhdmUtZ2liYm9ucyUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWZpcnN0LW5hbWUlMjAlMjJEYXZlJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBbGFzdC1uYW1lJTIwJTIyR2liYm9ucyUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWJvb2staXNibnMlMjAlNUIlMjIxMjMtNDU2JTIyJTVEJTdEKSUwQSUwQShkZWYlMjBzdGVwaGVuJTIwJTdCJTNBaWQlMjAlMjJzdGVwaGVuLWNvdmV5JTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBZmlyc3QtbmFtZSUyMCUyMlN0ZXBoZW4lMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FsYXN0LW5hbWUlMjAlMjJDb3ZleSUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWJvb2staXNibnMlMjAlNUIlMjIxNDUtNDIzJTIyJTVEJTdEKSUwQSUwQShkZWYlMjBjYXRhbG9nJTIwJTdCJTNBYm9va3MlMjAlN0IlMjIxMjMtNDU2JTIyJTIwJTdCJTNBaXNibiUyMCUyMjEyMy00NTYlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0F0aXRsZSUyMCUyMldhdGNobWVuJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBYXV0aG9yLWlkcyUyMCU1QiUyMmFsYW4tbW9vcmUlMjIlMjAlMjJkYXZlLWdpYmJvbnMlMjIlNUQlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAoJTNBaXNibiUyMHNldmVuLWhhYml0cyklMjBzZXZlbi1oYWJpdHMlN0QlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FhdXRob3JzJTIwJTdCJTIyYWxhbi1tb29yZSUyMiUyMGFsYW4lMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJkYXZlLWdpYmJvbnMlMjIlMjBkYXZlJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIyc3RlcGhlbi1jb3ZleSUyMiUyMHN0ZXBoZW4lN0QlN0Qp&lang=clojure) (books, authors)
+    * Represent a [catalog](books, authors)
 2. **5 min Meditation session**
 3. Functions
     * Write full-name that returns the full name of an author
@@ -73,7 +73,7 @@
 3. Create a catalog with zipmap and mapify
 4. Write tests for search
     * Equality of sequences
-5. **Exercice: Write <code>search </code>(inc. tests)</strong>
+5. **Exercice: Write `search`(inc. tests)**
 
 
 ### Summary
@@ -114,7 +114,7 @@ Did I mention?
 
 
 1. Serialize the search results to JSON Serialize the results
-2. Read catalog from a CSV files: [books.csv](https://docs.google.com/spreadsheets/u/0/d/1DdXArQ4g72-HAd4f0YC-nYouDe54a_xLt7HI0DHKA4c/edit) and [authors.csv](https://docs.google.com/spreadsheets/u/0/d/1EGHLI-kaIT5XYGh4nbb_XXWnF1SxXOQjbH0BKUYYE9I/edit) (Each participant is required to add 2 books) using this [rows->maps converter](https://klipse-embed.herokuapp.com/?src=KHJlcXVpcmUlMjAnJTVCY2xvanVyZS5zZXQlMjAlM0FyZWZlciUyMCU1QnJlbmFtZS1rZXlzJTVEJTVEKSUwQSUwQShkZWZuJTIwaGVhZGVycy1hbmQtcm93cy0lM0VtYXBzJTBBJTIwJTIwJTVCaGVhZGVycyUyMHJvd3MlNUQlMEElMjAlMjAobWFwJTIwKHBhcnRpYWwlMjB6aXBtYXAlMjBoZWFkZXJzKSUyMHJvd3MpKSUwQSUwQShoZWFkZXJzLWFuZC1yb3dzLSUzRW1hcHMlMjAlNUIlMjJpZCUyMiUyMCUyMm5hbWUlMjIlNUQlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUIlNUIlMjIxJTIyJTIwJTIyZm9vJTIyJTVEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVCJTIyMiUyMiUyMCUyMmJhciUyMiU1RCU1RCklMEElMEEoLSUzRSUzRSUyMCUwQSUyMCUyMChoZWFkZXJzLWFuZC1yb3dzLSUzRW1hcHMlMjAlNUIlMjJpZCUyMiUyMCUyMm5hbWUlMjIlNUQlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlNUIlNUIlMjIxJTIyJTIwJTIyZm9vJTIyJTVEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTVCJTIyMiUyMiUyMCUyMmJhciUyMiU1RCU1RCklMEElMjAlMjAobWFwJTIwJTIzKHJlbmFtZS1rZXlzJTIwJTI1JTIwJTdCJTIyaWQlMjIlMjAlMjJteS1pZCUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMm5hbWUlMjIlMjAlMjJ0aGUtbmFtZSUyMiU3RCkpKSUwQSUwQShtYXAlMjAlMjMoZ2V0JTIwJTdCJTIyaWQlMjIlMjAlMjJteS1pZCUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMm5hbWUlMjIlMjAlMjJ0aGUtbmFtZSUyMiU3RCUyMCUyNSklMEElMjAlMjAlMjAlMjAlMjAlNUIlMjJpZCUyMiUyMCUyMm5hbWUlMjIlNUQp&lang=clojure) and [https://github.com/clojure/data.csv](https://github.com/clojure/data.csv)
+2. Read catalog from a CSV files: [books.csv](https://docs.google.com/spreadsheets/u/0/d/1DdXArQ4g72-HAd4f0YC-nYouDe54a_xLt7HI0DHKA4c/edit) and [authors.csv](https://docs.google.com/spreadsheets/u/0/d/1EGHLI-kaIT5XYGh4nbb_XXWnF1SxXOQjbH0BKUYYE9I/edit) (Each participant is required to add 2 books) 
     * rename fields
     * parse fields with reduce (delay or cancel)
 3. **Exercice: Create catalog from 2 CSV files and implement search (as JSON)**
@@ -128,7 +128,7 @@ Did I mention?
 2. Implement filter using recursion
 3. Demonstrate laziness
 
-    ```
+```clojure
 (map print (range 100))
 (def res (map inc (range 100))
 ```
@@ -364,33 +364,32 @@ Did I mention?
         25. Specify what exactly need to be read in the book
         26. Share the syllabus before hand
         27. Provide the built code (as a repo, with tags)
-2. The benefits of Clojure \
+2. The benefits of Clojure
 
+![Clojure](https://slides.klipse.tech/reveal/site/img/clojure-essence.svg)
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+3. The principles of DOP 
 
-
-![alt_text](images/image1.png "image_tooltip")
-
-3. The principles of DOP \
-
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![Principles](https://slides.klipse.tech/reveal/site/img/do-principles-mind-map.png)
 
 4. DOP not in Clojure
     5. JSON schemas
-    6. Persistent data structures \
+    6. Persistent data structures 
 
 
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+| Language   | Library                  |
+|------------|--------------------------|
+| JavaScript | Immutable.js             |
+| Java       | Paguro                   |
+| Go         | Peds                     |
+| Clojure    | native                   |
+| C#         | provided by the language |
+| Python     | Pyrsistent               |
+| Ruby       | Hamster                  |
 
 
-![alt_text](images/image3.png "image_tooltip")
 
 5. Stay in touch
-    7. Twitter
-    8. Blog
-    9. Book
+    1. Twitter
+    1. Blog
+    1. Book
