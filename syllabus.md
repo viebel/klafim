@@ -332,7 +332,7 @@ Did I mention?
 
 
 
-1. Participants share their takeaways
+### Participants share their takeaways
     1. What did you learn
         1. data validation
         2. FP
@@ -364,17 +364,21 @@ Did I mention?
         25. Specify what exactly need to be read in the book
         26. Share the syllabus before hand
         27. Provide the built code (as a repo, with tags)
-2. The benefits of Clojure
+
+### Wrapping up
+
+#### The benefits of Clojure
 
 ![Clojure](https://slides.klipse.tech/reveal/site/img/clojure-essence.svg)
 
-3. The principles of DOP 
+#### The principles of DOP 
 
 ![Principles](https://slides.klipse.tech/reveal/site/img/do-principles-mind-map.png)
 
-4. DOP not in Clojure
-    5. JSON schemas
-    6. Persistent data structures 
+#### DOP not in Clojure
+
+1. JSON schema instead of Malli
+1. Persistent data structures 
 
 
 | Language   | Library                  |
@@ -389,7 +393,8 @@ Did I mention?
 
 
 
-5. Stay in touch
-    1. Twitter
-    1. Blog
-    1. Book
+#### Stay in touch
+
+1. [@viebel](https://twitter.com/viebel) on Twitter
+1. [blog.klipse.tech](https://blog.klipse.tech/)
+1. [Book](https://www.manning.com/books/data-oriented-programming?utm_source=viebel&utm_medium=affiliate&utm_campaign=book_sharvit2_data_1_29_21&a_aid=viebel&a_bid=d5b546b7)
