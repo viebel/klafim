@@ -1,22 +1,51 @@
-# klafim
 
-A Clojure library designed to ... well, that part is up to you.
 
-## Usage
+# Workshop:From OOP to DOP
 
-FIXME
 
-## License
+# Objective
 
-Copyright © 2022 FIXME
+Get into the FP and DOP mindset.
 
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
+Learn best practices.
 
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+Build a project following FP and DOP principles.
+
+Leverage the REPL for an efficient development workflow.
+
+
+# Outline
+
+
+## Day 1: Just use maps
+
+
+
+* Represent data with maps
+* Manipulate data as sequences
+* Lazy sequences 
+* The REPL
+* **Project: Represent a library and implement advanced catalog search**
+
+
+## Day 2: Immutable data structures
+
+
+
+* Treat data as a value
+* Calculation vs. mutation
+* State management
+* **Project: Add new entries to a catalog (books, authors, book copies)**
+
+
+## Day 3: Data validation
+
+
+
+* Clojure records
+* Malli
+* Advanced data manipulation
+* **Project: Validate catalog data before committing a mutation**
+
+
+
