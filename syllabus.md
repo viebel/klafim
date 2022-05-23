@@ -68,7 +68,7 @@
 
 
 
-1. Write a [search](https://klipse-embed.herokuapp.com/?multisnippets=1&src=KG5zJTIwbXkuY2F0YWxvZyUwQSUyMCUyMCglM0FyZXF1aXJlJTIwJTVCY2xvanVyZS5zdHJpbmclMjAlM0FyZWZlciUyMCU1QmluY2x1ZGVzJTNGJTVEJTVEKSklMEElMEEoZGVmJTIwbWlrZSUyMCU3QiUzQWZpcnN0LW5hbWUlMjAlMjJNaWNoYWVsJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBbGFzdC1uYW1lJTIwJTIyS2xleW1hbiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWVtYWlsJTIwJTIybWlrZSU0MG1lLmNvbSUyMiU3RCklMEElMEEoZGVmJTIwd2F0Y2htZW4lMjAlN0IlM0Fpc2JuJTIwJTIyMTIzLTQ1NiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQXRpdGxlJTIwJTIyV2F0Y2htZW4lMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FhdXRob3ItaWRzJTIwJTVCJTIyYWxhbi1tb29yZSUyMiUyMCUyMmRhdmUtZ2liYm9ucyUyMiU1RCU3RCklMEElMEEoZGVmJTIwc2V2ZW4taGFiaXRzJTIwJTdCJTNBaXNibiUyMCUyMjE0NS00MjMlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0F0aXRsZSUyMCUyMlNldmVuJTIwSGFiaXRzJTIwb2YlMjBIaWdobHklMjBFZmZlY3RpdmUlMjBQZW9wbGUlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FhdXRob3ItaWRzJTIwJTVCJTIyc3RlcGhlbi1jb3ZleSUyMiU1RCU3RCklMEElMEElMEEoZGVmJTIwYWxhbiUyMCU3QiUzQWlkJTIwJTIyYWxhbi1tb29yZSUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWZpcnN0LW5hbWUlMjAlMjJBbGFuJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBbGFzdC1uYW1lJTIwJTIyTW9vcmUlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0Fib29rLWlzYm5zJTIwJTVCJTIyMTIzLTQ1NiUyMiU1RCU3RCklMEElMEEoZGVmJTIwZGF2ZSUyMCU3QiUzQWlkJTIwJTIyZGF2ZS1naWJib25zJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBZmlyc3QtbmFtZSUyMCUyMkRhdmUlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FsYXN0LW5hbWUlMjAlMjJHaWJib25zJTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBYm9vay1pc2JucyUyMCU1QiUyMjEyMy00NTYlMjIlNUQlN0QpJTBBJTBBKGRlZiUyMHN0ZXBoZW4lMjAlN0IlM0FpZCUyMCUyMnN0ZXBoZW4tY292ZXklMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FmaXJzdC1uYW1lJTIwJTIyU3RlcGhlbiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWxhc3QtbmFtZSUyMCUyMkNvdmV5JTIyJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTNBYm9vay1pc2JucyUyMCU1QiUyMjE0NS00MjMlMjIlNUQlN0QpJTBBJTBBKGRlZiUyMGNhdGFsb2clMjAlN0IlM0Fib29rcyUyMCU3QiUyMjEyMy00NTYlMjIlMjAlN0IlM0Fpc2JuJTIwJTIyMTIzLTQ1NiUyMiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQXRpdGxlJTIwJTIyV2F0Y2htZW4lMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlM0FhdXRob3ItaWRzJTIwJTVCJTIyYWxhbi1tb29yZSUyMiUyMCUyMmRhdmUtZ2liYm9ucyUyMiU1RCU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCglM0Fpc2JuJTIwc2V2ZW4taGFiaXRzKSUyMHNldmVuLWhhYml0cyU3RCUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUzQWF1dGhvcnMlMjAlN0IlMjJhbGFuLW1vb3JlJTIyJTIwYWxhbiUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMmRhdmUtZ2liYm9ucyUyMiUyMGRhdmUlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjJzdGVwaGVuLWNvdmV5JTIyJTIwc3RlcGhlbiU3RCU3RCklMEElMEEoZGVmbiUyMGZ1bGwtbmFtZSUyMCU1QiU3QiUzQWtleXMlMjAlNUJmaXJzdC1uYW1lJTIwbGFzdC1uYW1lJTVEJTdEJTVEJTBBJTIwJTIwKHN0ciUyMGZpcnN0LW5hbWUlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjIlMjAlMjIlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjBsYXN0LW5hbWUpKSUwQSUwQShkZWZuJTIwbWF0Y2hpbmctYm9va3MlMjAlNUJjYXRhbG9nJTIwcXVlcnklNUQlMEElMjAlMjAoZmlsdGVyJTIwKGZuJTIwJTVCJTdCJTNBa2V5cyUyMCU1QnRpdGxlJTVEJTdEJTVEJTIwJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwKGNsb2p1cmUuc3RyaW5nJTJGaW5jbHVkZXMlM0YlMjB0aXRsZSUyMHF1ZXJ5KSklMjAlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAodmFscyUyMCglM0Fib29rcyUyMGNhdGFsb2cpKSkpJTBBJTBBKGRlZm4lMjBhdXRob3ItbmFtZSUyMCU1QiU3QiUzQWtleXMlMjAlNUJhdXRob3JzJTVEJTdEJTIwYXV0aG9yLWlkJTVEJTBBJTIwJTIwKC0lM0UlM0UlMjBhdXRob3ItaWQlMEElMjAlMjAlMjAlMjAoZ2V0JTIwYXV0aG9ycyklMEElMjAlMjAlMjAlMjAoZnVsbC1uYW1lKSkpJTBBJTBBKGRlZm4lMjBib29rLWluZm8lMjAlNUJjYXRhbG9nJTIwJTdCJTNBa2V5cyUyMCU1QmF1dGhvci1pZHMlMjB0aXRsZSU1RCU3RCU1RCUwQSUyMCUyMCU3QiUzQXRpdGxlJTIwdGl0bGUlMEElMjAlMjAlMjAlM0FhdXRob3ItbmFtZXMlMjAobWFwJTIwKGZuJTIwJTVCaWQlNUQlMjAlMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAoYXV0aG9yLW5hbWUlMjBjYXRhbG9nJTIwaWQpKSUwQSUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMCUyMGF1dGhvci1pZHMpJTdEKSUwQSUwQShkZWZuJTIwc2VhcmNoJTIwJTVCY2F0YWxvZyUyMHF1ZXJ5JTVEJTBBJTIwJTIwKGxldCUyMCU1QmJvb2tzJTIwKG1hdGNoaW5nLWJvb2tzJTIwY2F0YWxvZyUyMHF1ZXJ5KSU1RCUwQSUyMCUyMCUyMCUyMChtYXAlMjAoZm4lMjAlNUJib29rJTVEJTBBJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwJTIwKGJvb2staW5mbyUyMGNhdGFsb2clMjBib29rKSklMEElMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjAlMjBib29rcykpKSUwQSUwQShzZWFyY2glMjBjYXRhbG9nJTIwJTIyV2F0JTIyKQ%3D%3D&lang=clojure) function (inc. tests) that returns book details of books whose title contains a string (title, ISBN, author names)
+1. Write a `search` function (inc. tests) that returns book details of books whose title contains a string (title, ISBN, author names)
 2. Refactor with thread macro
 3. Create a catalog with zipmap and mapify
 4. Write tests for search
@@ -333,39 +333,12 @@ Did I mention?
 
 
 ### Participants share their takeaways
-    1. What did you learn
-        1. data validation
-        2. FP
-        3. map/filter/reduce
-        4. pair programming
-        5. VSCode
-        6. General feel of the language
-        7. recursive stack overflow
-        8. laziness
-    2. What was easy to learn
-        9. Nothing
-        10. IDE
-    3. What was difficult to learn
-        11. How to break down a business log into map/filter and reduce
-        12. map/filter/reduce
-        13. FP
-        14. IDE
-        15. too many functions to remember!
-        16. Lost in functions
-        17. parentheses
-        18. structure the code
-    4. How we could improve the workshop
-        19. Basic stuff about FP (map, filter, reduce, anonymous functions)
-        20. Split lessons and exercise into morning and afternoon sessions
-        21. Database, File systems, API, Web, Data pipeline,
-        22. Review a real system
-        23. How to apply in a QA team?
-        24. Too late notice for reading chapters a about book (allow people to block time)
-        25. Specify what exactly need to be read in the book
-        26. Share the syllabus before hand
-        27. Provide the built code (as a repo, with tags)
 
-### Wrapping up
+1. What did you learn?
+2. What was easy to learn?
+3. What was difficult to learn?
+4. How we could improve the workshop?
+    
 
 #### The benefits of Clojure
 
