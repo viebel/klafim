@@ -21,24 +21,29 @@
 
 ## Day 2: Leveraging data immutability
 
-1. Data Exchange over the wire
-    * CSV
-    * JSON
 1. Benefits of immutable data structures
 1. Efficiency of immutable data structures
 1. Business logic with immutable data structures
 1. State management with atoms
-1. Advanced Functional Programming (`reduce` and more...)
+1. Separating calculation from mutation
+3. Advanced Functional Programming (`reduce` and more...)
 
 
 ## Day 3: Data validation without types
 
 1. Custom data validation
 1. Separating between data representation and data schema
-1. Schema as data
+1. Schema as data (JSON schema)
 1. Data model flexibility
 1. Validation at system boundaries
 1. Validation of function arguments
 1. Generative testing
 1. Polymorphism without objects 
 
+## Day 4: Communicating over the wire
+
+1. JSON serialization
+1. JSON deserialization
+1. Accessing the database 
+1. Fetching data from web services
+1. Automatic generation of endpoint schema (e.g. Swagger)
