@@ -3,7 +3,7 @@
 # Syllabus 
 
 
-## Day 1: Just use maps
+## Day 1: Representing data with generic data structures
 
 1. Representing data with maps
 1. Domain modelling with maps
@@ -31,7 +31,7 @@
 1. Advanced Functional Programming (`reduce` and more...)
 
 
-## Day 3: Data validation
+## Day 3: Data validation without types
 
 1. Custom data validation
 1. Separating between data representation and data schema
