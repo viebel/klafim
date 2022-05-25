@@ -1,9 +1,19 @@
 
+# Workshop:From Object-Oriented to Data-Oriented
 
-# Syllabus 
+
+## Takeaways
+
+1. Get into the Data-Oriented Programming mindset.
+
+1. Learn best practices to reduce system complexity.
+
+1. Build a project following Data-Oriented Programming principles.
+
+## Syllabus 
 
 
-## Day 1: Representing data with generic data structures
+### Day 1: Representing data with generic data structures
 
 1. Representing data with maps
 1. Domain modelling with maps
@@ -19,7 +29,7 @@
 1. Debugging without a debugger
 
 
-## Day 2: Leveraging data immutability
+### Day 2: Leveraging data immutability
 
 1. Benefits of immutable data structures
 1. Efficiency of immutable data structures
@@ -29,7 +39,7 @@
 3. Advanced Functional Programming (`reduce` and more...)
 
 
-## Day 3: Data validation without types
+### Day 3: Data validation without types
 
 1. Custom data validation
 1. Separating between data representation and data schema
@@ -40,7 +50,7 @@
 1. Generative testing
 1. Polymorphism without objects 
 
-## Day 4: Communicating over the wire
+### Day 4: Communicating over the wire
 
 1. JSON serialization
 1. JSON deserialization
