@@ -1,5 +1,5 @@
 
-# Workshop:From Object-Oriented to Data-Oriented
+# Workshop: From Object-Oriented to Data-Oriented
 
 
 ## Takeaways
