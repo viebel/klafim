@@ -9,7 +9,7 @@
 1. Domain modelling with maps
 1. Writing functions that manipulate generic data
 1. Introduction to Functional Programming: 
-    * anonymous functions
+    * Anonymous functions
     * `map`
     * `filter`
     * `partial`
