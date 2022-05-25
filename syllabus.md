@@ -24,9 +24,9 @@
 1. Data Exchange over the wire
     * CSV
     * JSON
-1. Benefits of Immutable data structures
-1. Efficiency of Immutable data structures
-1. Business logic with Immutable data structures
+1. Benefits of immutable data structures
+1. Efficiency of immutable data structures
+1. Business logic with immutable data structures
 1. State management with atoms
 1. Advanced Functional Programming (`reduce` and more...)
 
