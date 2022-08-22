@@ -2,7 +2,6 @@
   (:require [clojure.test :refer [deftest is]]
             [klafim.catalog :refer [add-book create-catalog search]]))
 
-
 (def watchmen {:isbn "978-1779501127"
                :title "Watchmen"
                :author-ids ["alan-moore" "dave-gibbons"]})

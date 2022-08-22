@@ -1,6 +1,4 @@
-(ns klafim.utils 
-  (:require [clojure.set :refer [rename-keys]]))
-
+(ns klafim.utils)
 
 (defn full-name [{:keys [first-name last-name]}]
   (str first-name
