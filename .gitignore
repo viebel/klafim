@@ -11,6 +11,6 @@ pom.xml.asc
 /.prepl-port
 .hgignore
 .hg/
- .calva/
+.calva/
 .clj-kondo/
 .lsp/
