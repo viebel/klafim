@@ -36,7 +36,7 @@
 3. Functions
     * Write full-name that returns the full name of an author
     * Write a test for full-name
-4. **Exercice: Write <code>full-name </code>(inc. tests)</strong>
+4. **Exercice: Write <code>full-name </code>(inc. tests)</strong>**
 
 
 ### Functional programming (2 hours)
@@ -59,7 +59,7 @@
 3. Refactor matching-books with destructuring
 4. Refactor book-info with partial
 5. Refactor book-info with select-keys and update
-6. **Exercice: Write <code>book-info </code>and <code>matching-books </code>(inc. tests)</strong>
+6. **Exercice: Write <code>book-info </code>and <code>matching-books </code>(inc. tests)</strong>**
 
 
 ### A mini data pipeline (2 hours)
@@ -97,7 +97,6 @@
 ## Day 2: Immutable data structures
 
 Did I mention?
-
 
 
 1. Klipse
