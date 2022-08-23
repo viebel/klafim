@@ -14,13 +14,22 @@
          (map inc [2 3 4 5 10 232 12 1 1 1 1 120])
 
 
-         (map inc [1 2 3 4 5 19 20 10])
-)
+         (map inc [1 2 3 4 5 19 20 10]))
 
 
 
 (defn divide-by-two [n]
   (/ n 2))
+
+(defn multiply-by-n [a b]
+  (* a b))
+
+
+(map (partial multiply-by-n 10) [1 2 3 4])
+
+(map (fn [n] 
+       (multiply-by-n 10 n))
+     [1 2 3 4])
 
 (comment (divide-by-two 10)
 
@@ -107,6 +116,26 @@
   (map inc s))
 
 
+(defn book-matches? [book]
+  (= (:title book) "Watchmen"))
+
+(defn book-matches? [{:keys [title]}]
+  (= title "Watchmen"))
+
+(book-matches? {:title "Watchmen" :isbn "dssadas"})
+
+
+(map (fn [book]
+       (:title book))
+     [{:title "Watchmen" :isbn "dssadas"}
+      {:title "7 habits" :isbn "dssadas"}])
+
+
+(map :title
+     [{:title "Watchmen" :isbn "dssadas"}
+      {:title "7 habits" :isbn "dssadas"}])
+
+
 ;; Patrick: function overloading (multi arity)
 ;; Erris: How to write a function that expects a vector (destructuring)
 ;; JB: Type validation
@@ -122,10 +151,14 @@
 ;; map and filter
 ;; sequences
 ;; defn
+;; anonymous functions
 ;; let 
 ;; def
 ;; unit tests
 ;; equality check
-;; dictionaries and maps
+;; dictionaries and records
 ;; vectors
 ;; comment forms
+;; destructuring
+;; keywords as functions
+;; partial
