@@ -1,5 +1,5 @@
 (ns klafim.catalog-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [clojure.test :refer [deftest is testing]]
             [klafim.catalog :refer [add-book create-catalog search]]))
 
 (def watchmen {:isbn "978-1779501127"
@@ -30,10 +30,10 @@
   (create-catalog [watchmen seven-habits] [alan dave stephen]))
 
 (deftest search-test
-  (is (= [{:title "Watchmen"
-           :author-names ["Alan Moore" "Dave Gibbons"]}]
-         (search catalog "Wat"))))
-
+  (testing
+   (is (= [{:title "Watchmen"
+            :author-names ["Alan Moore" "Dave Gibbons"]}]
+          (search catalog "Wat")))))
 
 (deftest add-book-test
   (let [catalog (add-book {} {:isbn "978-1779501127"
