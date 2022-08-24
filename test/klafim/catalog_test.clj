@@ -53,8 +53,10 @@
                                              :id "dave-gibbons"}}}]
     (is (= expected catalog))))
 
+(comment
+  (add-book-test)
+  )
 
-'(1 2)
 
 (deftest add-book-idempotent-test
   (let [catalog (add-book {} {:isbn "978-1779501127"
