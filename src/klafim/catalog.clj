@@ -1,7 +1,7 @@
 (ns klafim.catalog
-  (:require [clojure.set :refer [rename-keys]]
-            [cheshire.core :refer [generate-string]]
-            [clojure.string :refer [includes? lower-case]]
+  (:require [cheshire.core :refer [generate-string]]
+            [clojure.set :refer [rename-keys]]
+            [clojure.string :refer [includes? lower-case upper-case]]
             [klafim.utils :refer [full-name mapify]]))
 
 (def watchmen {:isbn "978-1779501127"
@@ -78,6 +78,14 @@
   (str (lower-case first-name) "-"
        (lower-case last-name)))
 
+(comment
+  (author-id {:first-name "Dave"
+              :last-name "Gibbons"})
+  (map author-id [{:first-name "Alan"
+                   :last-name "Moore"}
+                  {:first-name "Dave"
+                   :last-name "Gibbons"}]))
+
 (defn add-book-only [catalog {:keys [title isbn authors]}]
   (assoc-in  catalog
              [:books isbn]
@@ -119,3 +127,92 @@
                            :last-name "Moore"}
                           {:first-name "Dave"
                            :last-name "Gibbons"}]}))
+
+
+(def my-book '{:title "Watchmen"
+               :isbn "978-1779501127"
+               :author-ids ("alan-moore" "dave-gibbons")})
+
+(defn add-book-simple [catalog book]
+  (let [books-with-the-new-book (assoc (:books catalog)
+                                       (:isbn book)
+                                       book)]
+    (assoc catalog :books books-with-the-new-book)))
+
+
+(defn add-book-simple [catalog book]
+  (update catalog :books (fn [books]
+                           (assoc books
+                                  (:isbn book)
+                                  book))))
+
+
+(update {:cnt 10} :cnt inc)
+
+
+(add-book-simple {} my-book)
+
+
+
+(update {:first-name "Sam"
+         :last-name "Williams"}
+        :last-name
+        (fn [last-name]
+          (upper-case last-name)))
+
+
+
+(defn count-items [cart])
+
+(= {:items 3} (count-items {:items ["book" "mug" "pencil"]}))
+
+
+(defn count-items-in-carts [carts])
+
+(= [{:items 1} {:items 3}] (count-items-in-carts [{:items ["glass"]}
+                                                  {:items ["book" "mug" "pencil"]}]))
+
+(def user {:id "erris"
+           :carts [{:items ["glass"]}
+                   {:items ["book" "mug" "pencil"]}]})
+
+(defn update-user-carts [user])
+
+(= {:id "erris"
+    :carts [{:items 1}
+            {:items 3}]}
+   (update-user-carts {:id "erris"
+                       :carts [{:items ["glass"]}
+                               {:items ["book" "mug" "pencil"]}]}))
+
+(defn update-all-user-carts [users])
+
+(= [{:id "erris"
+     :carts [{:items 2}
+             {:items 3}]}
+    {:id "erris"
+     :carts [{:items 1}
+             {:items 3}]}]
+   (update-all-user-carts [{:id "chip"
+                            :carts [{:items ["glass" "water"]}
+                                    {:items ["book" "mug" "pencil"]}]}
+                           {:id "erris"
+                            :carts [{:items ["glass"]}
+                                    {:items ["book" "mug" "pencil"]}]}]))
+
+
+(defn update-all-user-carts-in-system [system])
+
+
+(= {:users [{:id "erris"
+             :carts [{:items 2}
+                     {:items 3}]}
+            {:id "erris"
+             :carts [{:items 1}
+                     {:items 3}]}]}
+   (update-all-user-carts-in-system {:users [{:id "chip"
+                                              :carts [{:items ["glass" "water"]}
+                                                      {:items ["book" "mug" "pencil"]}]}
+                                             {:id "erris"
+                                              :carts [{:items ["glass"]}
+                                                      {:items ["book" "mug" "pencil"]}]}]}))

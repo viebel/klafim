@@ -53,6 +53,9 @@
                                              :id "dave-gibbons"}}}]
     (is (= expected catalog))))
 
+
+'(1 2)
+
 (deftest add-book-idempotent-test
   (let [catalog (add-book {} {:isbn "978-1779501127"
                               :title "Watchmen"

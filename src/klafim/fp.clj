@@ -27,9 +27,37 @@
 
 (map (partial multiply-by-n 10) [1 2 3 4])
 
-(map (fn [n] 
+(map (fn [n]
        (multiply-by-n 10 n))
      [1 2 3 4])
+
+
+(map (fn [n] (* n 5)) [1 2 3 4 5])
+
+(def start-coll [1 2 3 4 5])
+
+(def jb-coll (map (fn [n] {:my-number n
+                           :your-number (dec n)})
+                  start-coll))
+
+
+(map (fn [m] (:my-number m))
+     jb-coll)
+
+(= start-coll
+   (map (fn [{:keys [my-number]}] my-number)
+        jb-coll))
+
+
+(vals (first jb-coll))
+
+(get {:my-number 10
+      :your-number 9}
+     :my-number)
+
+
+(:my-number {:my-number 10
+             :your-number 9})
 
 (comment (divide-by-two 10)
 
@@ -112,38 +140,23 @@
 
 
 
-(defn inc-seq [s]
-  (map inc s))
 
 
-(defn book-matches? [book]
-  (= (:title book) "Watchmen"))
-
-(defn book-matches? [{:keys [title]}]
-  (= title "Watchmen"))
-
-(book-matches? {:title "Watchmen" :isbn "dssadas"})
 
 
-(map (fn [book]
-       (:title book))
-     [{:title "Watchmen" :isbn "dssadas"}
-      {:title "7 habits" :isbn "dssadas"}])
+(defn main []
+  (println "Hello Clojure!"))
 
 
-(map :title
-     [{:title "Watchmen" :isbn "dssadas"}
-      {:title "7 habits" :isbn "dssadas"}])
-
-
-;; Patrick: function overloading (multi arity)
-;; Erris: How to write a function that expects a vector (destructuring)
-;; JB: Type validation
-;; lists vs vectors
+;; JB: Type validation and type hint
+;; Elena, Patrick: lists vs vectors
+;; JB: Spread operator?
+;; Chip: recursion
 
 
 ;;; Summary
 
+;;; Day 1
 ;; Data
 ;; LISP syntax
 ;; REPL
@@ -162,3 +175,39 @@
 ;; destructuring
 ;; keywords as functions
 ;; partial
+
+;;; Day 2 - Immutability
+
+
+;; anonymous functions
+;; apply +, max
+;; multi arity functions
+;; variadic functions
+
+;; reduce - find-max, factorial, sorted?
+
+;; REPL or TDD
+
+;; assoc
+;; update
+
+;; always use the least generic tool that does the job!
+;; tools designed for professionals are not easy to use for beginners!
+
+;; reduce - implement frequencies
+
+;; immutable linked lists
+;; git vs. structural sharing
+
+;; assoc-in, update-in
+
+
+;; Day 3 
+;; JSON
+;; Run a program with bb
+;; ClojureScript
+;; Use NPM module
+;; Tests with bb
+
+
+
