@@ -29,9 +29,9 @@
 
 1. Data Representation
     * Represent a user (first name, last name, email)
-    * Repres	ent a book (title, ISBN, author-ids, publication year)
+    * Represent a book (title, ISBN, author-ids, publication year)
     * Represent an author (first name, last name, book-isbns)
-    * Represent a [catalog](books, authors)
+    * Represent a catalog (books, authors)
 2. **5 min Meditation session**
 3. Functions
     * Write full-name that returns the full name of an author
@@ -44,15 +44,15 @@
 
 
 1. Intro
-    * Write (map inc [1 2 3]) 
-    * (defn mult-by-10 [x] (* x 10)) 
-    * (map mult-by-10 [1 2 3]) 
-    * Write (map (fn [x] (* x 10)) [1 2 3]) 
-    * Write (filter odd? [1 2 3])
-    * (defn greater-than-1 [x] (> x 1)) 
-    * (filter greater-than-1 [1 2 3]) 
-    * Write (filter (fn [x] (> x 1)) [1 2 3])
-    * 
+    * Write `(map inc [1 2 3])`
+    * `(defn mult-by-10 [x] (* x 10))` 
+    * `(map mult-by-10 [1 2 3])` 
+    * Write `(map (fn [x] (* x 10)) [1 2 3])`
+    * Write `(filter odd? [1 2 3])`
+    * `(defn greater-than-1 [x] (> x 1))`
+    * `(filter greater-than-1 [1 2 3])` 
+    * Write `(filter (fn [x] (> x 1)) [1 2 3])`
+    
 2. Sequences 
     * Write matching-books (filter) STRUGGLE (find a simpler example)
     * Write book-info (map)
@@ -93,6 +93,14 @@
 5. unit tests
 6. Debug with local defs
 
+### Homework
+
+1. Write a function oldest-books that receives a library and return the books with oldest publication year.
+1. Write a function book-age that receives a book and the current year and return the age of the book (book age means current year minus publication year).
+1. Write a function average-book-age that returns the average of book ages (book age means current year minus publication year).
+1. Write a function num-of-words-in-title that receives a book and returns the number of words in the title.
+1. Write a function average-words-in-title that receives a library and return the average number of words in title.
+1. Write a function search-book-by-author that receives a library and a query and returns the books whose author first name is equal to the query.
 
 ## Day 2: Immutable data structures
 
