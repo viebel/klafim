@@ -12,20 +12,26 @@
             [reitit.swagger :as swagger]
             [reitit.swagger-ui :as swagger-ui]))
 
-(defn search-books-handler [{{{:keys [q]} :query :as parameters} :parameters}]
-  (def parameters parameters)
-  (def q q)
+(defn search-books-handler [{{{:keys [q]} :query} :parameters}]
   {:status 200
    :body (search-books q)})
+
+(def search-books-parameters-schema {:query [:map
+                                             [:q {:json-schema/example "Wat"} :string]]})
+
+(defn all-books-handler [_]
+  {:status 200
+   :body (all-books)})
+
+(defn ok-handler [_]
+  {:status 200, :body "ok"})
+
 (defn run []
   (run-server
    (ring/ring-handler
-    (ring/router [["/" {:get (fn [_]
-                               {:status 200, :body "ok"})}]
-                  ["/books" {:get (fn [_]
-                                    {:status 200
-                                     :body (all-books)})}]
-                  ["/search-books" {:parameters {:query [:map [:q :string]]}
+    (ring/router [["/" {:get ok-handler}]
+                  ["/books" {:get all-books-handler}]
+                  ["/search-books" {:parameters search-books-parameters-schema
                                     :get {:handler search-books-handler}}]
                   ["" {:no-doc true}
                    ["/swagger.json" {:get (swagger/create-swagger-handler)}]
@@ -34,15 +40,15 @@
                          :muuntaja m/instance
                          :middleware [;; query-params & form-params
                                       parameters/parameters-middleware
-                           ;; content-negotiation
+                                      ;; content-negotiation
                                       muuntaja/format-negotiate-middleware
-                           ;; encoding response body
+                                      ;; encoding response body
                                       muuntaja/format-response-middleware
-                           ;; decoding request body
+                                      ;; decoding request body
                                       muuntaja/format-request-middleware
-                           ;; coercing response bodys
+                                     ;; coercing response bodys
                                       coercion/coerce-response-middleware
-                           ;; coercing request parameters
+                                     ;; coercing request parameters
                                       coercion/coerce-request-middleware]}}))
    {:port 8888}))
 
