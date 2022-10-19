@@ -1,32 +1,49 @@
 (ns klafim.server
   (:require [cheshire.custom :refer [generate-string]]
             [klafim.library :refer [all-books search-books]]
+            [muuntaja.core :as m]
             [org.httpkit.server :refer [run-server]]
-            [reitit.coercion :as coercion]
             [reitit.coercion.malli]
             [reitit.ring :as ring]
-            [reitit.ring.coercion :as rrc]
-            [reitit.ring.middleware.parameters :as parameters]))
+            [reitit.ring.coercion :as coercion]
+            [reitit.ring.middleware.muuntaja :as muuntaja]
+            [reitit.ring.middleware.parameters :as parameters]
+            jsonista.core
+            [reitit.swagger :as swagger]
+            [reitit.swagger-ui :as swagger-ui]))
 
-(defn handler [_]
-  {:status 200, :body "ok"})
-
+(defn search-books-handler [{{{:keys [q]} :query :as parameters} :parameters}]
+  (def parameters parameters)
+  (def q q)
+  {:status 200
+   :body (search-books q)})
 (defn run []
   (run-server
    (ring/ring-handler
-    (ring/router [["/" {:get handler}]
-                  ["/books" {:get (fn [request]
+    (ring/router [["/" {:get (fn [_]
+                               {:status 200, :body "ok"})}]
+                  ["/books" {:get (fn [_]
                                     {:status 200
-                                     :body (generate-string (all-books))})}]
+                                     :body (all-books)})}]
                   ["/search-books" {:parameters {:query [:map [:q :string]]}
-                                    :get {:handler (fn [{{{:keys [q]} :query} :parameters}]
-                                                     {:status 200
-                                                      :body (generate-string (search-books q))})}}]]
+                                    :get {:handler search-books-handler}}]
+                  ["" {:no-doc true}
+                   ["/swagger.json" {:get (swagger/create-swagger-handler)}]
+                   ["/docs/*" {:get (swagger-ui/create-swagger-ui-handler)}]]]
                  {:data {:coercion reitit.coercion.malli/coercion
-                         :middleware [parameters/parameters-middleware
-                                      rrc/coerce-exceptions-middleware
-                                      rrc/coerce-request-middleware
-                                      rrc/coerce-response-middleware]}}))
+                         :muuntaja m/instance
+                         :middleware [;; query-params & form-params
+                                      parameters/parameters-middleware
+                           ;; content-negotiation
+                                      muuntaja/format-negotiate-middleware
+                           ;; encoding response body
+                                      muuntaja/format-response-middleware
+                           ;; decoding request body
+                                      muuntaja/format-request-middleware
+                           ;; coercing response bodys
+                                      coercion/coerce-response-middleware
+                           ;; coercing request parameters
+                                      coercion/coerce-request-middleware]}}))
    {:port 8888}))
 
 (comment
