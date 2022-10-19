@@ -4,15 +4,20 @@
 
 (def catalog-state (atom {}))
 
-(defn add-book! [catalog-state book]
+(defn add-book! [book]
   (swap! catalog-state (fn [catalog]
                          (cat/add-book catalog book))))
 
+(defn search-books [query]
+  (cat/search @catalog-state query))
 
+(defn all-books []
+  (vals (:books @catalog-state)))
 (comment
-  (add-book! catalog-state {:isbn "978-1779501127"
-                                      :title "Watchmen"
-                                      :authors [{:first-name "Alan"
-                                                 :last-name "Moore"}
-                                                {:first-name "Dave"
-                                                 :last-name "Gibbons"}]}))
+  (search-books "Watch")
+  (add-book! {:isbn "978-1779501127"
+              :title "Watchmen"
+              :authors [{:first-name "Alan"
+                         :last-name "Moore"}
+                        {:first-name "Dave"
+                         :last-name "Gibbons"}]}))
