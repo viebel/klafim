@@ -28,7 +28,7 @@
 
 (def catalog
   (create-catalog [watchmen seven-habits] [alan dave stephen]))
-
+  
 (deftest search-test
   (testing
    (is (= [{:title "Watchmen"
